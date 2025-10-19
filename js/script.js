@@ -89,16 +89,5 @@ setTimeout(() => {
     }
 }, 800);
 
-// Click overlay to close
-overlay.addEventListener('click', () => {
-    overlay.style.display = 'none';
-    letterContainer.style.display = 'none';
-    document.getElementById('frame1').style.display = 'none';
-    document.getElementById('frame2').style.display = 'none';
-    document.getElementById('frame3').style.display = 'none';
-    document.getElementById('frame4').style.display = 'none';
-    giftBox.classList.remove('hidden');
-    letterContent.style.display = 'none';
-    letterContent.textContent = '';
-    isLetterOpen = false;
-});
+// Click overlay to close - REMOVED
+// Letter will stay open, user cannot close it by clicking background
